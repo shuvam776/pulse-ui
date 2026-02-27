@@ -26,11 +26,26 @@ function page() {
                 <button className="font-semibold underline-offset-5 hover:underline duration-300 cursor-pointer">
                     Hover Underline Button
                 </button>
-                <button className="bg-yellow-400 px-3 font-semibold shadow-[0_0_0px_5px_black] cursor-pointer hover:opacity-90">
+                <button className="bg-yellow-400 px-3 py-1 font-semibold shadow-[0_0_0px_5px_black] cursor-pointer hover:opacity-90">
                     Sharp Shadow
                 </button>
-                <button className="bg-yellow-400 px-3 font-semibold shadow-[5px_5px_0px_1px_black] cursor-pointer hover:opacity-90">
+                <button className="bg-yellow-400 px-3 py-1 font-semibold shadow-[5px_5px_0px_1px_black] cursor-pointer hover:opacity-90">
                     Angle Shadow
+                </button>
+                <button className="bg-yellow-400 px-3 py-1 font-semibold hover:shadow-[5px_5px_0px_1px_black] cursor-pointer hover:-translate-y-1 duration-300">
+                    Hover Angle Shadow
+                </button>
+                <button className="px-3 py-1 bg-orange-600 font-semibold text-white rounded cursor-pointer hover:scale-[1.1] duration-200">
+                    Expansion
+                </button>
+                <button className="px-3 py-1 bg-orange-600 font-semibold text-white rounded cursor-pointer hover:scale-[0.9] duration-200">
+                    Contraction
+                </button>
+                <button className="px-3 py-1 bg-red-600 text-white rounded-[1rem] cursor-pointer hover:opacity-85">
+                    Capsule
+                </button>
+                <button>
+                    
                 </button>
             </div>
         </div>
