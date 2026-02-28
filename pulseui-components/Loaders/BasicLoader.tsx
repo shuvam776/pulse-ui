@@ -1,5 +1,3 @@
-import { motion } from "framer-motion";
-
 function BasicLoader({color="black",size=40, thickness=6}) {
   return (
     <div className={`rounded-full animate-spin`}

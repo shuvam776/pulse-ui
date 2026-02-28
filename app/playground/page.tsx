@@ -2,6 +2,7 @@
 
 import BasicLoader from "@/pulseui-components/Loaders/BasicLoader";
 import Loader2 from "@/pulseui-components/Loaders/Loader2";
+import Loader3 from "@/pulseui-components/Loaders/Loader3";
 
 function page() {
   return (
@@ -52,11 +53,11 @@ function page() {
           <button className="px-3 py-1 bg-orange-600 font-semibold text-white rounded cursor-pointer hover:scale-[0.9] duration-200">
             Contraction
           </button>
-          <button className="px-3 py-1 bg-red-600 text-white rounded-[20px] cursor-pointer hover:opacity-85">
+          <button className="px-4 py-1 bg-red-600 text-white rounded-[40px] cursor-pointer hover:opacity-85">
             Capsule
           </button>
-          <div className="p-1 bg-yellow-500 rounded bg-gradient-to-r from-pink-500 to-purple-500">
-            <button className="px-3 py-1 rounded bg-black text-white cursor-pointer">
+          <div className="p-1 bg-yellow-500 rounded bg-gradient-to-r from-pink-500 to-purple-500 flex items-center justify-center">
+            <button className="px-3 py-2 rounded bg-black text-white cursor-pointer">
               Gradient Border
             </button>
           </div>
@@ -68,16 +69,19 @@ function page() {
             Click Push
           </button>
           <button
-          className="bg-white text-black font-serif py-2 px-4 rounded-lg 
+            className="bg-white text-black py-2 px-4 rounded-lg 
                 border-black
                transition-all duration-100 ease-in-out
-               shadow-md hover:bg-gray-200 hover:animate-pulse" >Fading</button>
-               <button
-          className="bg-green-600 border-4 border-black  text-black px-6 py-2 rounded-lg transition-transform duration-300 ease-in-out hover:rotate-10" >wiggly clockwise</button>
-          <button
-          className="bg-green-600 border-4 border-black text-black px-6 py-2 rounded-lg transition-transform duration-300 ease-in-out hover:-rotate-10" >wiggly anticlockwise</button>
-          
-        
+               shadow-md hover:bg-gray-200 hover:animate-pulse cursor-pointer"
+          >
+            Fading
+          </button>
+          <button className="bg-green-600 border-4 border-black text-black font-semibold px-6 py-2 rounded-lg transition-transform duration-300 ease-in-out hover:rotate-4 cursor-pointer">
+            Wiggly Clockwise
+          </button>
+          <button className="bg-green-600 border-4 border-black text-black px-6 py-2 rounded-lg transition-transform duration-300 ease-in-out hover:-rotate-4 font-semibold cursor-pointer">
+            Wiggly Anticlockwise
+          </button>
         </div>
       </div>
       {/* Loaders */}
@@ -86,7 +90,9 @@ function page() {
         <h2 className="font-semibold text-neutral-600 mb-2">Basic Loader</h2>
         <BasicLoader color={"black"} size={40} thickness={6} />
         <h2 className="font-semibold text-neutral-600 mb-2 mt-5">Loader 2</h2>
-        <Loader2 color={"red"} size={40} thickness={6}/>
+        <Loader2 color={"red"} size={40} thickness={6} />
+        <h2 className="font-semibold text-neutral-600 mb-2 mt-5">Loader 3</h2>
+        <Loader3/>
       </div>
     </div>
   );
