@@ -1,6 +1,7 @@
 "use client";
 
 import BasicLoader from "@/pulseui-components/Loaders/BasicLoader";
+import Loader2 from "@/pulseui-components/Loaders/Loader2";
 
 function page() {
   return (
@@ -72,8 +73,9 @@ function page() {
       <div className="h-fit w-full border-2 border-black border-dashed p-5 rounded-md flex-col">
         <h1 className="text-3xl font-bold mb-5">Loaders</h1>
         <h2 className="font-semibold text-neutral-600 mb-2">Basic Loader</h2>
-        <BasicLoader color={"black"} size={40} thickness={6}/>
-
+        <BasicLoader color={"black"} size={40} thickness={6} />
+        <h2 className="font-semibold text-neutral-600 mb-2 mt-5">Loader 2</h2>
+        <Loader2 color={"red"} size={40} thickness={6}/>
       </div>
     </div>
   );
