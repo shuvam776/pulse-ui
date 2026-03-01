@@ -17,7 +17,7 @@ function Loader4() {
           ],
         }}
         transition={{
-          duration: 4,
+          duration: 2,
           repeat: Infinity,
         //   ease: "linear",
         }}
@@ -34,7 +34,7 @@ function Loader4() {
           ],
         }}
         transition={{
-          duration: 4,
+          duration: 2,
           repeat: Infinity,
         //   ease: "linear",
         }}
@@ -51,7 +51,7 @@ function Loader4() {
           ],
         }}
         transition={{
-          duration: 4,
+          duration: 2,
           repeat: Infinity,
         //   ease: "linear",
         }}
@@ -68,7 +68,7 @@ function Loader4() {
           ],
         }}
         transition={{
-          duration: 4,
+          duration: 2,
           repeat: Infinity,
         //   ease: "linear",
         }}
