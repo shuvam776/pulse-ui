@@ -12,6 +12,7 @@ import Loader9 from "@/pulseui-components/Loaders/Loader9";
 import Loader10 from "@/pulseui-components/Loaders/Loader10"
 import SingleFileUpload from "@/pulseui-components/File Upload/SingleFileUpload";
 import MultipleFileUpload from "@/pulseui-components/File Upload/MultipleFileUpload";
+import ImageUpload from "@/pulseui-components/File Upload/ImageUpload";
 
 function page() {
   return (
@@ -124,6 +125,8 @@ function page() {
         <SingleFileUpload/>
         <h2 className="text-neutral-600 font-semibold mb-3 mt-3">Multiple File Upload</h2>
         <MultipleFileUpload/>
+        <h2 className="text-neutral-600 font-semibold mb-3 mt-3">Image File Upload</h2>
+        <ImageUpload/>
       </div>
     </div>
   );
