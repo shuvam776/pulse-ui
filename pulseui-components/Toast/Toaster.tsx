@@ -26,15 +26,16 @@ export function Toaster({
     | "bottom-right";
 }) {
   const [toasts, setToasts] = useState<toastPropsType[]>([]);
-//   const [mounted, setMounted] = useState(false);
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
     const unsubscribe = subscribe(setToasts);
-    // setMounted(true);
+    // eslint-disable-next-line react-hooks/set-state-in-effect
+    setMounted(true);
     return unsubscribe;
   }, []);
 
-//   if (!mounted) return null;
+  if (!mounted) return null;
 
   return createPortal(
     <div
