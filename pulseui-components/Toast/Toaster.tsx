@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { subscribe } from "./toast";
 import { createPortal } from "react-dom";
-import { Check, Info, X } from "lucide-react";
+import { Check, X } from "lucide-react";
 import { motion } from "framer-motion";
 
 interface toastPropsType {
@@ -26,15 +26,15 @@ export function Toaster({
     | "bottom-right";
 }) {
   const [toasts, setToasts] = useState<toastPropsType[]>([]);
-  const [mounted, setMounted] = useState(false);
+//   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
     const unsubscribe = subscribe(setToasts);
-    setMounted(true);
+    // setMounted(true);
     return unsubscribe;
   }, []);
 
-  if (!mounted) return null;
+//   if (!mounted) return null;
 
   return createPortal(
     <div

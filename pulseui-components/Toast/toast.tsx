@@ -3,7 +3,7 @@ interface toastPropsType {
   duration?: number;
   className?: string;
   id?: string;
-  type?: "success" | "failure" | "info" | "warning";
+  type?: "success" | "failure";
 }
 
 let toasts: toastPropsType[] = [];
