@@ -24,6 +24,7 @@ import DatePicker from "@/pulseui-components/Date Picker/DatePicker";
 import Accordian1 from "@/pulseui-components/Accordian/Accordian1";
 import Accordian2 from "@/pulseui-components/Accordian/Accordian2";
 import Avatar1 from "@/pulseui-components/Avatars/Avatar1";
+import Avatar2 from "@/pulseui-components/Avatars/Avatar2";
 import Card1 from "@/pulseui-components/Cards/Card1";
 function Page() {
   const [files, setFiles] = useState<File[]>([]);
@@ -34,7 +35,8 @@ function Page() {
   return (
     <div className="flex flex-col items-center justify-center gap-5 p-10">
       <h1 className="text-2xl text-center font-bold mb-5">
-        Playground display of the decided components (Not the final documentation)
+        Playground display of the decided components (Not the final
+        documentation)
       </h1>
       {/* Buttons */}
       {/* <div className="h-fit w-full border-2 border-black border-dashed p-5 rounded-md flex-col">
@@ -231,12 +233,24 @@ function Page() {
       {/* Avatar */}
       <div className="h-fit w-full border-2 border-black border-dashed p-5 rounded-md flex-col">
         <h1 className="text-3xl font-bold mb-5">Avatar</h1>
-        <Avatar1 src="/avatar1.png" alt="AS" size={40} className="" />
+        <h2 className="text-neutral-700 mb-3 font-semibold">Simple Avatar</h2>
+        <Avatar1
+          src="/avatar1.png"
+          fallBackText="AS"
+          size={40}
+        />
+        <h2 className="text-neutral-700 my-3 font-semibold">Avatar 2</h2>
+        <Avatar2
+          src="/avatar1.png"
+          fallBackText="AS"
+          size={40}
+          title={"Project Lead"}
+        />
       </div>
       <div className="h-fit w-full border-2 border-black border-dashed p-5 justify-items-start rounded-md flex-col">
         <h1 className="text-3xl font-bold mb-5">Cards</h1>
         <h2 className="text-neutral-600 font-semibold mb-3 text-2xl relative left-6">Card1</h2>
-        <Card1 >Card 1</Card1>
+        <Card1>_</Card1>
         
       </div>
     </div>
